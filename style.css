@@ -352,6 +352,10 @@ a img.aligncenter {
 	display: table;
     width: 100%;
 	text-align: center;
+	  -webkit-background-size: 100% auto;
+	  -moz-background-size: 100% auto;
+	  -o-background-size: 100% auto;
+	  background-size: 100% auto;
 }
 .main-banner::after {
     content: " ";
