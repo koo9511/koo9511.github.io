@@ -29,6 +29,12 @@
 	}
 
 }
+@media (max-width: 415px) and (orientation: landscape) {
+	section#home{
+		width: 100%;
+	}
+
+}
 
 
 body {
