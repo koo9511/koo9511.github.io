@@ -23,20 +23,6 @@
     SKELETON
 -------------------------------------------------------------------*/
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-	section#home{
-		width: 100%;
-	}
-
-}
-@media (max-width: 415px) and (orientation: landscape) {
-	section#home{
-		width: 100%;
-	}
-
-}
-
-
 body {
     color: #999999;
     font-size: 14px;
