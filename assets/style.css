@@ -22,11 +22,17 @@
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
+<<<<<<< HEAD
 
 ::-webkit-scrollbar {
     display: none !important;
 }
 
+=======
+::-webkit-scrollbar {
+    display: none !important;
+}
+>>>>>>> 1fc90a307fb27cfb6e96ea99dbd92ab3a39a3b5d
 body {
     color: #999999;
     font-size: 14px;
@@ -413,9 +419,7 @@ a img.aligncenter {
 }
 
 /* -------------------------------- 
-
 xclip 
-
 -------------------------------- */
 .cd-headline.clip span {
   display: inline-block;
