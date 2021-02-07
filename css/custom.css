@@ -1,2 +1,20 @@
 
-/** ADD YOUR AWESOME CODES HERE **/
+@keyframes fadeio{
+    0%{
+      opacity: 0;
+    }
+  
+    50%{
+      opacity: 0.5;
+    }
+  
+    100%{
+      opacity: 0;
+    }
+  }
+
+  .fadeio{
+    -moz-animation: fadeio 6s 1;
+    -webkit-animation: fadeio 6s 1;
+    animation: fadeio 6s 1;
+  }

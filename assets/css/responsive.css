@@ -2,6 +2,10 @@
     Version: 1.0
 /****************************************** */
 
+.navbar-nav {
+	background-color: #333;
+	border-radius: 5px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 @media (min-width: 768px) and (max-width: 991px) {
 	#mainNav {
@@ -100,6 +104,7 @@
 	}
 }
 @media only screen and (min-width: 280px) and (max-width: 599px) {
+
 	#mainNav {
 		background-color: #333333;
 	}
@@ -112,6 +117,7 @@
 	.navbar-dark .navbar-toggler{
 		color: rgba(255,255,255);
 		border-color: rgba(255,255,255);
+		margin-top: -40px;
 	}
 	.heading h1{
 		font-size: 28px;

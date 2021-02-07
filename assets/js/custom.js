@@ -58,10 +58,14 @@
 			backToTop = function () {
 				var scrollTop = $(window).scrollTop();
 				if (scrollTop > scrollTrigger) {
-					$('#scroll-to-top').addClass('show');
+          $('#scroll-to-top').addClass('show');
+          $('#mainNav').addClass('show').css('transition','700ms')
 				} else {
 					$('#scroll-to-top').removeClass('show');
+          $('#mainNav').removeClass('show').css('transition','700ms')
 				}
+        
+        // $('#mainNav').css('transition','none')
 			};
 		backToTop();
 		$(window).on('scroll', function () {
