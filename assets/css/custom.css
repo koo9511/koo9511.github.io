@@ -693,8 +693,17 @@
 .des-buttons button {
   font-size: 0.7em;
   border-radius: 7px;
+  margin-top: 3px;
 }
 
 .img-overlay {
   background-color: #444 !important;
+}
+
+.nav-link .js-scroll-trigger {
+  font-weight: 600;
+}
+
+.nav-link .js-scroll-trigger .active {
+  font-weight: 800;
 }
