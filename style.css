@@ -25,7 +25,7 @@
 body {
     color: #999999;
     font-size: 14px;
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
     line-height: 1.80857;
 }
 
@@ -378,7 +378,6 @@ a img.aligncenter {
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 62px;
-	/* text-transform: uppercase; */
 }
 .heading p{
 	font-size: 18px;
@@ -1077,7 +1076,7 @@ xclip
 
 .icon-wrapper p small:after {
     content: "\f105";
-    font-family: FontAwesome;
+    /* font-family: FontAwesome; */
     margin-left: 5px;
     font-size: 11px;
 }
