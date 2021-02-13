@@ -678,3 +678,23 @@
   #mainNav.show {
     margin-top: 0px !important;
 }
+
+.description {
+  color: white !important;
+  padding: 8px;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+.des-buttons {
+  height: 100%;
+  padding: 8px 8px 8px;
+  vertical-align: bottom;
+}
+.des-buttons button {
+  font-size: 0.7em;
+  border-radius: 7px;
+}
+
+.img-overlay {
+  background-color: #444 !important;
+}

@@ -141,7 +141,9 @@
 		margin-bottom: 30px;
 	}
 	.filter-button-group button{
-		padding: 12px 27px;
+		/* padding: 12px 27px; */
+		width: 24%;
+		font-size: 0.5em;
 	}
 	.filter-button-group{
 		text-align: center !important;
