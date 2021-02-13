@@ -127,6 +127,6 @@ var bgIMG = new Image();
 
 bgIMG.src = "assets/images/mac-wallpaper.jpg";
 bgIMG.onload = () =>{
-  homeBGIMG.style.backgroundImage = `url('assets/uploads/banner-01.jpg')`
+  homeBGIMG.style.backgroundImage = `url("${bgIMG.src}")`
   main();
 }

@@ -6,8 +6,7 @@
     IMPORT FONTS
 -------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 /*------------------------------------------------------------------
     IMPORT FILES
 -------------------------------------------------------------------*/
@@ -379,7 +378,7 @@ a img.aligncenter {
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 62px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 .heading p{
 	font-size: 18px;
