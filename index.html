@@ -34,6 +34,29 @@
     	
     	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
+        <script>
+            function sendmail(){
+
+                var name = $('#name').val()
+                var email = $('#email').val()
+                var phone = $('#phone').val()
+                var message = $('#message').val()
+
+                var content = "이름 : " + name + "\n연락처 : " + phone + ", " + email + "\n내용 : " + message
+
+                var templateParams = {
+                    name: name ,
+                    notes: content
+                };
+                
+                emailjs.send('service_orjnz4l', 'template_fx8j8d6', templateParams)
+                    .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    }, function(error) {
+                    console.log('FAILED...', error);
+                });
+            }
+        </script>
 
     </head>
     <body id="page-top" class="politics_version">
@@ -423,7 +446,7 @@
                     <div class="col-md-12">
                         <div class="contact_form" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             <div id="message"></div>
-                            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <form id="contactForm" name="sentMessage" novalidate="novalidate" onsubmit="sendmail()">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -457,6 +480,8 @@
                 </div>
             </div>
         </div>
+
+        
     
         <div class="copyrights">
             <div class="container">
@@ -471,14 +496,6 @@
     
         <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-        <script>
-            var templateParams = { name: 'James', notes: 'Check this out!' }; 
-            emailjs.send('service_orjnz4l', 'template_fx8j8d6', templateParams) .then(function(response) { 
-                console.log('SUCCESS!', response.status, response.text); 
-            }, function(error) { console.log('FAILED...', error); });
-
-        </script>
-    
         <!-- ALL JS FILES -->
         <script src="assets/js/all.js"></script>
         <!-- Camera Slider -->
@@ -493,6 +510,14 @@
         <script src="assets/js/custom.js"></script>
         <script src="assets/js/jquery.vide.js"></script>
         <!-- <script src="assets/js/script.js"></script> -->
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"> </script> 
+        <script type="text/javascript"> 
+            (function(){ 
+                emailjs.init("service_orjnz4l"); 
+            })(); 
+        </script>
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
