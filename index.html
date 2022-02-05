@@ -1,553 +1,549 @@
-    <!DOCTYPE html>
-    <html>
-        <head>
-        <!-- Basic -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-       
-        <!-- Mobile Metas -->
-        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-        <meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
-     
-         <!-- Site Metas -->
-        <title>ᕕ( ᐛ )ᕗ</title>  
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        
-    
-        <!-- Site Icons -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="assets/images/favicon.ico">
-        <!--fonts-->
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!-- Site CSS -->
-        <link rel="stylesheet" href="assets/style.css">
-        <!-- Responsive CSS -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="assets/css/custom.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-        <script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
-    	
-    	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
-        <script>
-            function sendmail(){
-
-                var name = $('#name').val()
-                var email = $('#email').val()
-                var phone = $('#phone').val()
-                var message = $('#message').val()
-
-                var content = "이름 : " + name + "\n연락처 : " + phone + ", " + email + "\n내용 : " + message
-
-                var templateParams = {
-                    name: name ,
-                    notes: content
-                };
-                
-                emailjs.send('service_orjnz4l', 'template_fx8j8d6', templateParams)
-                    .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    }, function(error) {
-                    console.log('FAILED...', error);
-                });
-            }
-        </script>
-
-    </head>
-    <body id="page-top" class="politics_version">
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
    
-	        <!-- LOADER -->
-        <div id="preloader">
-            <div id="main-ld">
-                <div id="loader"></div>  
-            </div>
-        </div><!-- end loader -->
-        <!-- END LOADER -->
-        
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="margin-top: -80px;">
-          <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <!-- <img class="img-fluid" src="images/logo.png" alt="" /> -->
-                <a href="#page-top" class="img-fluid" style="color: #ebebeb; font-size: 2em; font-weight: 400;">Koogunmo</a>
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              Menu
-              <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#services">Technology</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <div id="arrow"class="arrow bounce">
-            <!-- <a class="" href="#"> -->
-              <!-- asdwdasd -->
-              <i id="arrow-in"class="arrow-down" style="cursor: pointer;" onclick="location.href='#about'"></i>
-            <!-- </a> -->
-          </div>
-
-        <!-- <section id="home" class="section-main">
-            <div class="mac-window">
-                <div class="terminal-topbar">
-                    <span class="terminal-btn red"></span>
-                    <span class="terminal-btn yellow"></span>
-                    <span class="terminal-btn green"></span>
-                </div>
-                <div id="terminal">
-                    <span class="terminal-body">Resource Loading...</span>
-                </div>
-            </div>
-        </section> -->
-        <section id="home" class="main-banner parallaxie" style="background: url('assets/images/mac-wallpaper.jpg')">
-            <div class="heading">
-             
-                <h1 style="text-transform: none;">"When you want to quit, think about why you started"</h1>
-                <p>'KooGunMo'</p>
-                <h3 class="cd-headline clip is-full-width">
-                    <span>I have a  </span>
-                    <span class="cd-words-wrapper">
-                        <b class="is-visible">Passion</b>
-                        <b>Technology</b>
-                        <b>Dream</b>
-                    </span>
-                </h3>
-            </div>
-        </section>
+    <!-- Mobile Metas -->
+    <!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+    <meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+ 
+     <!-- Site Metas -->
+    <title>ᕕ( ᐛ )ᕗ</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
     
-        <div id="about" class="section wb">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="message-box">                        
-                            <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">About me</h2>
-                            <br>
-                           <h4  data-aos="fade-up"data-aos-anchor-placement="center-bottom">안녕하세요. 결과를 보여 주는 개발자 구건모입니다.</h4>
-                           <br>
-                           <p data-aos="fade-up"data-aos-anchor-placement="center-bottom">
-                            &nbsp;프로그래밍 언어중에 가장 좋아하는 언어는 자바입니다. 또한, 원하는 것을 자유롭게 표현할 수 있는 웹 개발 공부를 계속하고 있습니다.<br><br>
-                            &nbsp;새로운 기술을 배우는 것에 큰 흥미를 가지고 있고, 한 번 익힌 기술은 실무에서 사용할 수 있도록 공부합니다. <br><br>
 
-                            <b data-aos="fade-up"data-aos-anchor-placement="center-bottom">빈틈 없이 설계하고, 막힘 없이 개발하는 개발자가 되겠습니다.</b>
-                            </p>
-                            <br>
-                            <h4>Hanyang Univ.</h4>
-                            <br>
-                            <h4>Computer Software Engineering</h4>
-                            <br>
-                            <a data-aos="flip-left" data-aos-anchor-placement="center-bottom" href="https://www.github.com/koo9511" class="sim-btn btn-hover-new" data-text="">Git<span></span></a>&nbsp;
-			                <a data-aos="flip-left" data-aos-anchor-placement="center-bottom" href="https://www.acmicpc.net/user/koo9511" class="sim-btn btn-hover-new" data-text="">Baekjoon<span></span></a>&nbsp;
-                            <a data-aos="flip-left" data-aos-anchor-placement="center-bottom" href="mailto:gunmo9511@gmail.com?Subject=메일 주셔서 감사합니다 :)"  class="sim-btn btn-hover-new" data-text="" target="_top">E-Mail</a>&nbsp;
-                        </div>
-                    </div>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.ico">
+    <!--fonts-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-                    <div class="wow" style="margin: 0 auto; border-radius: 10px;" data-aos="fade-left" data-aos-anchor-placement="center-bottom" >
-<<<<<<< HEAD
-                        <img src="assets/uploads/kgm.JPG" alt="Image" class="img-fluid img-rounded" width="300" style="border-radius: 10px;box-shadow: 0px 0px 30px -10px #444;">
-=======
-                        <img src="assets/uploads/new_about.JPG" alt="Image" class="img-fluid img-rounded" width="300" style="border-radius: 10px;box-shadow: 0px 0px 30px -10px #444;">
->>>>>>> 675b1d6590b5cb1f8ddc605beb505d5d863705b2
+    <script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
+    
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
+    <script>
+        function sendmail(){
+
+            var name = $('#name').val()
+            var email = $('#email').val()
+            var phone = $('#phone').val()
+            var message = $('#message').val()
+
+            var content = "이름 : " + name + "\n연락처 : " + phone + ", " + email + "\n내용 : " + message
+
+            var templateParams = {
+                name: name ,
+                notes: content
+            };
+            
+            emailjs.send('service_orjnz4l', 'template_fx8j8d6', templateParams)
+                .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                console.log('FAILED...', error);
+            });
+        }
+    </script>
+
+</head>
+<body id="page-top" class="politics_version">
+
+        <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+            <div id="loader"></div>  
+        </div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="margin-top: -80px;">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <!-- <img class="img-fluid" src="images/logo.png" alt="" /> -->
+            <a href="#page-top" class="img-fluid" style="color: #ebebeb; font-size: 2em; font-weight: 400;">Koogunmo</a>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="arrow"class="arrow bounce">
+        <!-- <a class="" href="#"> -->
+          <!-- asdwdasd -->
+          <i id="arrow-in"class="arrow-down" style="cursor: pointer;" onclick="location.href='#about'"></i>
+        <!-- </a> -->
+      </div>
+
+    <!-- <section id="home" class="section-main">
+        <div class="mac-window">
+            <div class="terminal-topbar">
+                <span class="terminal-btn red"></span>
+                <span class="terminal-btn yellow"></span>
+                <span class="terminal-btn green"></span>
+            </div>
+            <div id="terminal">
+                <span class="terminal-body">Resource Loading...</span>
+            </div>
+        </div>
+    </section> -->
+    <section id="home" class="main-banner parallaxie" style="background: url('assets/images/mac-wallpaper.jpg')">
+        <div class="heading">
+         
+            <h1 style="text-transform: none;">"It works, On my machine"</h1>
+            <p>'Dev. KooGunMo'</p>
+            <h3 class="cd-headline clip is-full-width">
+                <span>I have a  </span>
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Passion</b>
+                    <b>Technology</b>
+                    <b>Dream</b>
+                </span>
+            </h3>
+        </div>
+    </section>
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">About me</h2>
+                        <br>
+                       <h4  data-aos="fade-up"data-aos-anchor-placement="center-bottom">안녕하세요. 결과를 보여 주는 개발자 구건모입니다.</h4>
+                       <br>
+                       <p data-aos="fade-up"data-aos-anchor-placement="center-bottom">
+                        &nbsp;프로그래밍 언어중에 가장 좋아하는 언어는 자바입니다. 또한, 원하는 것을 자유롭게 표현할 수 있는 웹 개발 공부를 계속하고 있습니다.<br><br>
+                        &nbsp;새로운 기술을 배우는 것에 큰 흥미를 가지고 있고, 한 번 익힌 기술은 실무에서 사용할 수 있도록 공부합니다. <br><br>
+
+                        <b data-aos="fade-up"data-aos-anchor-placement="center-bottom">빈틈 없이 설계하고, 막힘 없이 개발하는 개발자가 되겠습니다.</b>
+                        </p>
+                        <br>
+                        <h4>Hanyang Univ.</h4>
+                        <br>
+                        <h4>Computer Software Engineering</h4>
+                        <br>
+                        <a data-aos="flip-left" data-aos-anchor-placement="center-bottom" href="https://www.github.com/koo9511" class="sim-btn btn-hover-new" data-text="">Git<span></span></a>&nbsp;
+                        <a data-aos="flip-left" data-aos-anchor-placement="center-bottom" href="https://www.acmicpc.net/user/koo9511" class="sim-btn btn-hover-new" data-text="">Baekjoon<span></span></a>&nbsp;
+                        <a data-aos="flip-left" data-aos-anchor-placement="center-bottom" href="mailto:gunmo9511@gmail.com?Subject=메일 주셔서 감사합니다 :)"  class="sim-btn btn-hover-new" data-text="" target="_top">E-Mail</a>&nbsp;
                     </div>
+                </div>
+
+                <div class="wow" style="margin: 0 auto; border-radius: 10px;" data-aos="fade-left" data-aos-anchor-placement="center-bottom" >
+                    <img src="assets/uploads/kgm.JPG" alt="Image" class="img-fluid img-rounded" width="300" style="border-radius: 10px;box-shadow: 0px 0px 30px -10px #444;">
                 </div>
             </div>
         </div>
-        
-        <div id="services" class="section lb">
-            <div class="container">
-                <div class="section-title text-left">
-                    <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Technology</h3>
-                    <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">좋은 기술은 빠르게, 익힌 기술은 자유롭게</p>
-                </div><!-- end title -->
+    </div>
     
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <div class="ser-icon">
-                                <i class="flaticon-seo"></i>
-                            </div>
-                            <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Utilize</h2>
-                            <p>Spring Framework</p>
-                            <p>Maven Library</p>
-                            <p>Mybatis</p>
-                            <p>SVN</p>
-                        </div>
-                    </div><!-- end col -->
-                    <div class="col-md-4">
-                        <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <div class="ser-icon">
-                                <i class="flaticon-development"></i>
-                            </div>
-                            <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Library</h2>
-                            <p>Ajax</p>
-                            <p>JQuery</p>
-                            <p>React</p>
-                            <p>Vue</p>
+    <div id="services" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Technology</h3>
+                <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">좋은 기술은 빠르게, 익힌 기술은 자유롭게</p>
+            </div><!-- end title -->
 
-                            <!-- 
-                            <p>IDE : Visual Studio</p>
-                            <p>Library : JQuery, Bootstrap</p> -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <div class="ser-icon">
+                            <i class="flaticon-seo"></i>
                         </div>
-                    </div><!-- end col -->
-                    <div class="col-md-4">
-                        <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <div class="ser-icon">
-                                <i class="flaticon-process"></i>
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Utilize</h2>
+                        <p>Spring Framework</p>
+                        <p>Maven Library</p>
+                        <p>Mybatis</p>
+                        <p>SVN</p>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <div class="ser-icon">
+                            <i class="flaticon-development"></i>
+                        </div>
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Library</h2>
+                        <p>Ajax</p>
+                        <p>JQuery</p>
+                        <p>React</p>
+                        <p>Vue</p>
+
+                        <!-- 
+                        <p>IDE : Visual Studio</p>
+                        <p>Library : JQuery, Bootstrap</p> -->
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <div class="ser-icon">
+                            <i class="flaticon-process"></i>
+                        </div>
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">DataBase</h2>
+                        <!-- <p>using : Mac OS Catalina</p> -->
+                        <p>Oracle</p>
+                        <p>Maria</p>
+                        <p>MySQL</p>
+                        <p>MSSQL</p>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <div class="ser-icon">
+                            <i class="flaticon-discuss-issue"></i>
+                        </div>
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Linux</h2>
+                        <p>Git</p>
+                        <p>Docker</p>
+                        <p>Batch</p>
+                        <p>Kubernetes</p>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <div class="ser-icon">
+                            <i class="flaticon-idea"></i>
+                        </div>
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Operating System</h2>
+                        <p>Mac OS Catalina</p>
+                        <p>Windows</p>
+                        <p>Ubuntu</p>
+                        <p>Cent OS</p>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <div class="ser-icon">
+                            <i class="flaticon-idea-1"></i>
+                        </div>
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Language</h2>
+                        <p>Java</p>
+                        <p>C++</p>
+                        <p>Swift</p>
+                        <p>Objective-C</p>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+    
+    <div id="portfolio" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Portfolio</h3>
+                <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">지금 까지 진행한 프로젝트를 모아두었습니다.</p>
+            </div><!-- end title -->
+            
+            <div class="gallery-menu row">
+                <div class="col-md-12">
+                    <div class="button-group filter-button-group text-left">
+                        <button data-aos="flip-up" data-aos-anchor-placement="center-bottom" class="active" data-filter="*">All</button>
+                        <button data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-filter=".gal_a">Solo</button>
+                        <button data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-filter=".gal_b">Team</button>
+                        <button data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-filter=".gal_c">Work</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-list row">
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a">
+                    <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <img src="assets/images/portfolio/game.png" class="img-fluid" alt="Image" width="400" height="300">
+                        <div class="img-overlay">
+                            <div class="des-buttons">
+                                <div class="description">
+                                    <a>Java 의 Swing 으로 만든 리듬게임입니다.</a><br><br>
+                                    대학에서 Java 언어를 공부하던 중, Swing과 다중 Thread를 할용하여 리듬게임을 만들었습니다. 
+                                    미리 등록해둔 곡을 선택하고, 해당 곡에 맞게 떨어지는 노트들에 맞는 키를 정확한 타이밍에 타이핑하는
+                                    평범한 리듬게임 입니다. 
+                                </div>
+                                <button type="button">Java</button>
+                                <button type="button">Swing</button>
                             </div>
-                            <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">DataBase</h2>
-                            <!-- <p>using : Mac OS Catalina</p> -->
-                            <p>Oracle</p>
-                            <p>Maria</p>
-                            <p>MySQL</p>
-                            <p>MSSQL</p>
                         </div>
-                    </div><!-- end col -->
-                    <div class="col-md-4">
-                        <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <div class="ser-icon">
-                                <i class="flaticon-discuss-issue"></i>
-                            </div>
-                            <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Linux</h2>
-                            <p>Git</p>
-                            <p>Docker</p>
-                            <p>Batch</p>
-                            <p>Kubernetes</p>
-                        </div>
-                    </div><!-- end col -->
-                    <div class="col-md-4">
-                        <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <div class="ser-icon">
-                                <i class="flaticon-idea"></i>
-                            </div>
-                            <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Operating System</h2>
-                            <p>Mac OS Catalina</p>
-                            <p>Windows</p>
-                            <p>Ubuntu</p>
-                            <p>Cent OS</p>
-                        </div>
-                    </div><!-- end col -->
-                    <div class="col-md-4">
-                        <div class="services-inner-box" data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <div class="ser-icon">
-                                <i class="flaticon-idea-1"></i>
-                            </div>
-                            <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Language</h2>
-                            <p>Java</p>
-                            <p>C++</p>
-                            <p>Swift</p>
-                            <p>Objective-C</p>
-                        </div>
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end section -->
-        
-        <div id="portfolio" class="section lb">
-            <div class="container">
-                <div class="section-title text-left">
-                    <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Portfolio</h3>
-                    <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">지금 까지 진행한 프로젝트를 모아두었습니다.</p>
-                </div><!-- end title -->
+                    </div>
+                </div>
                 
-                <div class="gallery-menu row">
-                    <div class="col-md-12">
-                        <div class="button-group filter-button-group text-left">
-                            <button data-aos="flip-up" data-aos-anchor-placement="center-bottom" class="active" data-filter="*">All</button>
-                            <button data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-filter=".gal_a">Solo</button>
-                            <button data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-filter=".gal_b">Team</button>
-                            <button data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-filter=".gal_c">Work</button>
+                <div class="col-md-4 col-sm-6 gallery-grid gal_b">
+                    <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <img src="assets/images/portfolio/sector.png" class="img-fluid" alt="Image" width="400" height="300">
+                        <div class="img-overlay">
+                            <div class="des-buttons">
+                                <div class="description">
+                                    <a>무료 그룹웨어 플랫폼입니다.</a><br><br>
+                                    회사 규모가 작은 스타트업을 타겟으로 삼은 그룹웨어 서비스입니다.
+                                    몇 가지의 기능들을 사용하기 위해 수십가지의 기능을 제공하는 유료 그룹웨어 플랫폼을 사용해야하는 기업에게
+                                    적합한 서비스입니다. 전자결재, 거래처 관리, 사내메일, 공지사항, 스케줄러 등의 기본 기능들을 무료로 사용 가능합니다. 
+                                    모바일에서도 편하게 사용할 수 있습니다. 
+                                </div>
+                                <button type="button">Java</button>
+                                <button type="button">Oracle</button>
+                                <button type="button">MyBatis</button>
+                                <button type="button">Git</button>
+                                <button type="button">Maven</button>
+                                <button type="button">JSP</button>
+                                <button type="button">CSS3</button>
+                                <button type="button">Bootstrap</button>
+                                <button type="button">Ajax</button>
+                                <button type="button">JavaScript</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="gallery-list row">
-                    <div class="col-md-4 col-sm-6 gallery-grid gal_a">
-                        <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <img src="assets/images/portfolio/game.png" class="img-fluid" alt="Image" width="400" height="300">
-                            <div class="img-overlay">
-                                <div class="des-buttons">
-                                    <div class="description">
-                                        <a>Java 의 Swing 으로 만든 리듬게임입니다.</a><br><br>
-                                        대학에서 Java 언어를 공부하던 중, Swing과 다중 Thread를 할용하여 리듬게임을 만들었습니다. 
-                                        미리 등록해둔 곡을 선택하고, 해당 곡에 맞게 떨어지는 노트들에 맞는 키를 정확한 타이밍에 타이핑하는
-                                        평범한 리듬게임 입니다. 
-                                    </div>
-                                    <button type="button">Java</button>
-                                    <button type="button">Swing</button>
-                                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid gal_b">
+                    <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <img src="assets/images/portfolio/danim.png" class="img-fluid" alt="Image" width="400" height="300">
+                        <div class="img-overlay">
+                            <div class="description">
+                                <a>인증된 사람간의 심부름 서비스 플랫폼입니다.</a><br><br>
+                                간단한 심부름으로 유저들이 수익을 창출할 수 있는 서비스입니다. 
+                                사용자들은 신분증으로 개인 정보 인증을 받은 후 서비스를 이용할 수 있습니다. 
+                                서비스 범위는 GPS 기준 3km 까지이며, 매칭이 성사되면 상대방과 실시간 채팅을 할 수 있습니다. 
+                                결제는 서비스 요청자가 선불, 후불 등의 타입으로 선택 가능합니다. 
+                            </div>
+                            <div class="des-buttons">
+                                <button type="button">Java</button>
+                                <button type="button">Spring</button>
+                                <button type="button">Oracle</button>
+                                <button type="button">MyBatis</button>
+                                <button type="button">Git</button>
+                                <button type="button">Maven</button>
+                                <button type="button">JSP</button>
+                                <button type="button">CSS3</button>
+                                <button type="button">Bootstrap</button>
+                                <button type="button">Ajax</button>
+                                <button type="button">JavaScript</button>
+                                <button type="button">Kakao API</button>
+                                <button type="button">GoogleMaps API</button>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-4 col-sm-6 gallery-grid gal_b">
-                        <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <img src="assets/images/portfolio/sector.png" class="img-fluid" alt="Image" width="400" height="300">
-                            <div class="img-overlay">
-                                <div class="des-buttons">
-                                    <div class="description">
-                                        <a>무료 그룹웨어 플랫폼입니다.</a><br><br>
-                                        회사 규모가 작은 스타트업을 타겟으로 삼은 그룹웨어 서비스입니다.
-                                        몇 가지의 기능들을 사용하기 위해 수십가지의 기능을 제공하는 유료 그룹웨어 플랫폼을 사용해야하는 기업에게
-                                        적합한 서비스입니다. 전자결재, 거래처 관리, 사내메일, 공지사항, 스케줄러 등의 기본 기능들을 무료로 사용 가능합니다. 
-                                        모바일에서도 편하게 사용할 수 있습니다. 
-                                    </div>
-                                    <button type="button">Java</button>
-                                    <button type="button">Oracle</button>
-                                    <button type="button">MyBatis</button>
-                                    <button type="button">Git</button>
-                                    <button type="button">Maven</button>
-                                    <button type="button">JSP</button>
-                                    <button type="button">CSS3</button>
-                                    <button type="button">Bootstrap</button>
-                                    <button type="button">Ajax</button>
-                                    <button type="button">JavaScript</button>
-                                </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 gallery-grid gal_c">
+                    <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <img src="assets/images/portfolio/rms.png" class="img-fluid" alt="Image" width="400" height="300">
+                        <div class="img-overlay">
+                            <div class="description">
+                            <a>매장들의 매출 정보를 조회, 분석하는 플랫폼입니다.</a><br><br>
+                            프랜차이즈 본사는 가맹점들의 세부적인 매출들을 그래프로 한 눈에 조회할 수 있으며, 
+                            가맹점주들 또한 본인 매장의 매출을 쉽게 보고 분석할 수 있습니다. 
+                            분석 항목으로는 시간, 메뉴, 배달앱, 날씨 기간대비, 결제방식 등이 있습니다.</div>
+                            <div class="des-buttons">
+                                <button type="button">Java</button>
+                                <button type="button">Spring</button>
+                                <button type="button">MySQL</button>
+                                <button type="button">MyBatis</button>
+                                <button type="button">SVN</button>
+                                <button type="button">Maven</button>
+                                <button type="button">JSP</button>
+                                <button type="button">CSS3</button>
+                                <button type="button">Ajax</button>
+                                <button type="button">JavaScript</button>
+                                <button type="button">Kakao API</button>
+                                <button type="button">Weather API</button>
+                                <button type="button">Chart JS</button>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-4 col-sm-6 gallery-grid gal_b">
-                        <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <img src="assets/images/portfolio/danim.png" class="img-fluid" alt="Image" width="400" height="300">
-                            <div class="img-overlay">
-                                <div class="description">
-                                    <a>인증된 사람간의 심부름 서비스 플랫폼입니다.</a><br><br>
-                                    간단한 심부름으로 유저들이 수익을 창출할 수 있는 서비스입니다. 
-                                    사용자들은 신분증으로 개인 정보 인증을 받은 후 서비스를 이용할 수 있습니다. 
-                                    서비스 범위는 GPS 기준 3km 까지이며, 매칭이 성사되면 상대방과 실시간 채팅을 할 수 있습니다. 
-                                    결제는 서비스 요청자가 선불, 후불 등의 타입으로 선택 가능합니다. 
-                                </div>
-                                <div class="des-buttons">
-                                    <button type="button">Java</button>
-                                    <button type="button">Spring</button>
-                                    <button type="button">Oracle</button>
-                                    <button type="button">MyBatis</button>
-                                    <button type="button">Git</button>
-                                    <button type="button">Maven</button>
-                                    <button type="button">JSP</button>
-                                    <button type="button">CSS3</button>
-                                    <button type="button">Bootstrap</button>
-                                    <button type="button">Ajax</button>
-                                    <button type="button">JavaScript</button>
-                                    <button type="button">Kakao API</button>
-                                    <button type="button">GoogleMaps API</button>
-                                </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 gallery-grid gal_c">
+                    <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <img src="assets/images/portfolio/wmpo.png" class="img-fluid" alt="Image" width="400" height="300">
+                        <div class="img-overlay">
+                            <div class="description">
+                                <a>O2O 배달 서비스 프로그램을 제어하는 플랫폼입니다.</a><br><br>
+                                해당 페이지에서는, 가맹점을 O2O 서비스에 가입시키는 관리자가 해당 가맹점을 인증시켜주는 '인증' 기능과,
+                                서비스를 이용하는 가맹저들의 정보 및 수수료 현황등을 조회할 수 있으며, 공지사항 또한 작성 가능합니다.
+                            </div>
+                            <div class="des-buttons">
+                                <button type="button">Java</button>
+                                <button type="button">Spring</button>
+                                <button type="button">MySQL</button>
+                                <button type="button">MyBatis</button>
+                                <button type="button">SVN</button>
+                                <button type="button">Maven</button>
+                                <button type="button">JSP</button>
+                                <button type="button">CSS3</button>
+                                <button type="button">Ajax</button>
+                                <button type="button">JavaScript</button>
+                                <button type="button">Kakao API</button>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-4 col-sm-6 gallery-grid gal_c">
-                        <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <img src="assets/images/portfolio/rms.png" class="img-fluid" alt="Image" width="400" height="300">
-                            <div class="img-overlay">
-                                <div class="description">
-                                <a>매장들의 매출 정보를 조회, 분석하는 플랫폼입니다.</a><br><br>
-                                프랜차이즈 본사는 가맹점들의 세부적인 매출들을 그래프로 한 눈에 조회할 수 있으며, 
-                                가맹점주들 또한 본인 매장의 매출을 쉽게 보고 분석할 수 있습니다. 
-                                분석 항목으로는 시간, 메뉴, 배달앱, 날씨 기간대비, 결제방식 등이 있습니다.</div>
-                                <div class="des-buttons">
-                                    <button type="button">Java</button>
-                                    <button type="button">Spring</button>
-                                    <button type="button">MySQL</button>
-                                    <button type="button">MyBatis</button>
-                                    <button type="button">SVN</button>
-                                    <button type="button">Maven</button>
-                                    <button type="button">JSP</button>
-                                    <button type="button">CSS3</button>
-                                    <button type="button">Ajax</button>
-                                    <button type="button">JavaScript</button>
-                                    <button type="button">Kakao API</button>
-                                    <button type="button">Weather API</button>
-                                    <button type="button">Chart JS</button>
-                                </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a">
+                    <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <img src="assets/images/portfolio/WithU.png" class="img-fluid" alt="Image" width="400" height="300">
+                        <div class="img-overlay">
+                            <div class="description">
+                                <a>프라이빗한 SNS 웹/앱 입니다. (개발중)</a><br><br>
+                                타인에게 공유하지 않고, 유저들의 사진 및 컨텐츠를 날짜, 분류별로 편하게 관리할 수 있도록 도와주는 앱입니다.
+                                인스타그램의 단점을 보완하고 타인에게 본인의 사생활을 노출하고 싶지 않은 유저들에게 적합한 앱입니다.
+                            </div>
+                            <div class="des-buttons">
+                                <button type="button">Java</button>
+                                <button type="button">Spring</button>
+                                <button type="button">MySQL</button>
+                                <button type="button">MyBatis</button>
+                                <button type="button">SVN</button>
+                                <button type="button">Maven</button>
+                                <button type="button">JSP</button>
+                                <button type="button">CSS3</button>
+                                <button type="button">Ajax</button>
+                                <button type="button">JavaScript</button>
+                                <button type="button">Kakao API</button>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-md-4 col-sm-6 gallery-grid gal_c">
-                        <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <img src="assets/images/portfolio/bdp.png" class="img-fluid" alt="Image" width="400" height="300">
-                            <div class="img-overlay">
-                                <div class="description">
-                                    <a>O2O 배달 서비스 프로그램을 제어하는 플랫폼입니다.</a><br><br>
-                                    해당 페이지에서는, 가맹점을 O2O 서비스에 가입시키는 관리자가 해당 가맹점을 인증시켜주는 '인증' 기능과,
-                                    서비스를 이용하는 가맹저들의 정보 및 수수료 현황등을 조회할 수 있으며, 공지사항 또한 작성 가능합니다.
-                                </div>
-                                <div class="des-buttons">
-                                    <button type="button">Java</button>
-                                    <button type="button">Spring</button>
-                                    <button type="button">MySQL</button>
-                                    <button type="button">MyBatis</button>
-                                    <button type="button">SVN</button>
-                                    <button type="button">Maven</button>
-                                    <button type="button">JSP</button>
-                                    <button type="button">CSS3</button>
-                                    <button type="button">Ajax</button>
-                                    <button type="button">JavaScript</button>
-                                    <button type="button">Kakao API</button>
-                                </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a">
+                    <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
+                        <img src="assets/images/portfolio/Reservation.png" class="img-fluid" alt="Image" width="400" height="300">
+                        <div class="img-overlay">
+                            <div class="description">
+                                <a>온라인 예약 플랫폼 입니다. (개발중)</a><br><br>
+                                기존 서비스 중인 예약 플랫폼의 단점을 보완한 서비스 입니다.
+                                관리자는 매출 현황을 조회하고 분석할 수 있고 고객 및 직원관리를 수월하게 할 수 있으며
+                                고객들의 예약 접근성을 높여 모두의 편의를 고려한 예약 플랫폼입니다.
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 gallery-grid gal_a">
-                        <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <img src="assets/images/portfolio/WithU.png" class="img-fluid" alt="Image" width="400" height="300">
-                            <div class="img-overlay">
-                                <div class="description">
-                                    <a>프라이빗한 SNS 웹/앱 입니다. (개발중)</a><br><br>
-                                    타인에게 공유하지 않고, 유저들의 사진 및 컨텐츠를 날짜, 분류별로 편하게 관리할 수 있도록 도와주는 앱입니다.
-                                    인스타그램의 단점을 보완하고 타인에게 본인의 사생활을 노출하고 싶지 않은 유저들에게 적합한 앱입니다.
-                                </div>
-                                <div class="des-buttons">
-                                    <button type="button">Java</button>
-                                    <button type="button">Spring</button>
-                                    <button type="button">MySQL</button>
-                                    <button type="button">MyBatis</button>
-                                    <button type="button">SVN</button>
-                                    <button type="button">Maven</button>
-                                    <button type="button">JSP</button>
-                                    <button type="button">CSS3</button>
-                                    <button type="button">Ajax</button>
-                                    <button type="button">JavaScript</button>
-                                    <button type="button">Kakao API</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 gallery-grid gal_a">
-                        <div class="gallery-single fix"data-aos="flip-up" data-aos-anchor-placement="center-bottom">
-                            <img src="assets/images/portfolio/Reservation.png" class="img-fluid" alt="Image" width="400" height="300">
-                            <div class="img-overlay">
-                                <div class="description">
-                                    <a>온라인 예약 플랫폼 입니다. (개발중)</a><br><br>
-                                    기존 서비스 중인 예약 플랫폼의 단점을 보완한 서비스 입니다.
-                                    관리자는 매출 현황을 조회하고 분석할 수 있고 고객 및 직원관리를 수월하게 할 수 있으며
-                                    고객들의 예약 접근성을 높여 모두의 편의를 고려한 예약 플랫폼입니다.
-                                </div>
-                                <div class="des-buttons">
-                                    <button type="button">Java</button>
-                                    <button type="button">Spring</button>
-                                    <button type="button">MySQL</button>
-                                    <button type="button">Git</button>
-                                    <button type="button">Maven</button>
-                                    <button type="button">JPA</button>
-                                    <button type="button">CSS3</button>
-                                    <button type="button">Ajax</button>
-                                    <button type="button">Lombok</button>
-                                </div>
+                            <div class="des-buttons">
+                                <button type="button">Java</button>
+                                <button type="button">Spring</button>
+                                <button type="button">MySQL</button>
+                                <button type="button">Git</button>
+                                <button type="button">Maven</button>
+                                <button type="button">JPA</button>
+                                <button type="button">CSS3</button>
+                                <button type="button">Ajax</button>
+                                <button type="button">Lombok</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script> 
-        <script type="text/javascript"> (function(){ emailjs.init("id"); })(); </script>
+    </div>
 
-        <div id="contact" class="section db">
-            <div class="container">
-                <div class="section-title text-left">
-                    <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Contact Me</h3>
-                    <p></p>
-                </div>
-    
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="contact_form" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                            <div id="message"></div>
-                            <form id="contactForm" name="sentMessage" novalidate="novalidate" onsubmit="sendmail()">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input class="form-control" id="name" type="text" placeholder="이 름" required="required" data-validation-required-message="이름을 입력하세요.">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" id="email" type="email" placeholder="이메일" required="required" data-validation-required-message="이메일을 입력하세요.">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" id="phone" type="tel" placeholder="전화번호" required="required" data-validation-required-message="전화번호를 입력해주세요.">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script> 
+    <script type="text/javascript"> (function(){ emailjs.init("id"); })(); </script>
+
+    <div id="contact" class="section db">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3 data-aos="fade-up" data-aos-anchor-placement="center-bottom">Contact Me</h3>
+                <p></p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact_form" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div id="message"></div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate" onsubmit="sendmail()">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" type="text" placeholder="이 름" required="required" data-validation-required-message="이름을 입력하세요.">
+                                        <p class="help-block text-danger"></p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="message" placeholder="내 용" required="required" data-validation-required-message="내용을 입력해주세요."></textarea>
-                                            <p class="help-block text-danger"></p>
-                                        </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" type="email" placeholder="이메일" required="required" data-validation-required-message="이메일을 입력하세요.">
+                                        <p class="help-block text-danger"></p>
                                     </div>
-                                    <div class="clearfix"></div>
-                                    <div class="col-lg-12 text-center">
-                                        <div id="success"></div>
-                                        <button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="보낼게요!" type="submit"><span>보낼까요?</span></button>
+                                    <div class="form-group">
+                                        <input class="form-control" id="phone" type="tel" placeholder="전화번호" required="required" data-validation-required-message="전화번호를 입력해주세요.">
+                                        <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" placeholder="내 용" required="required" data-validation-required-message="내용을 입력해주세요."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="보낼게요!" type="submit"><span>보낼까요?</span></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        
     
-        <div class="copyrights">
-            <div class="container">
-                <div class="footer-distributed">
-                    <div class="footer-left">
-                        <p class="footer-company-name">Copyrights &copy; 2019 Create By : 
-                        <a href="#contact">Koo Gun Mo</a></p>
-                    </div>
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name">Copyrights &copy; 2019 Create By : 
+                    <a href="#contact">Koo Gun Mo</a></p>
                 </div>
-            </div><!-- end container -->
-        </div><!-- end copyrights -->
-    
-        <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
 
-        <!-- ALL JS FILES -->
-        <script src="assets/js/all.js"></script>
-        <!-- Camera Slider -->
-        <!-- <script src="assets/js/jquery.mobile.customized.min.js"></script> -->
-        <script src="assets/js/jquery.easing.1.3.js"></script> 
-        <script src="assets/js/parallaxie.js"></script>
-        <script src="assets/js/headline.js"></script>
-        <!-- Contact form JavaScript -->
-        <script src="assets/js/jqBootstrapValidation.js"></script>
-        <script src="assets/js/contact_me.js"></script>
-        <!-- ALL PLUGINS -->
-        <script src="assets/js/custom.js"></script>
-        <script src="assets/js/jquery.vide.js"></script>
-        <!-- <script src="assets/js/script.js"></script> -->
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"> </script> 
-        <script type="text/javascript"> 
-            (function(){ 
-                emailjs.init("service_orjnz4l"); 
-            })(); 
-        </script>
+    <!-- ALL JS FILES -->
+    <script src="assets/js/all.js"></script>
+    <!-- Camera Slider -->
+    <!-- <script src="assets/js/jquery.mobile.customized.min.js"></script> -->
+    <script src="assets/js/jquery.easing.1.3.js"></script> 
+    <script src="assets/js/parallaxie.js"></script>
+    <script src="assets/js/headline.js"></script>
+    <!-- Contact form JavaScript -->
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="assets/js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery.vide.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
-    </html>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"> </script> 
+    <script type="text/javascript"> 
+        (function(){ 
+            emailjs.init("service_orjnz4l"); 
+        })(); 
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
