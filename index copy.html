@@ -1,0 +1,80 @@
+
+
+
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script>
+            // id = #
+            // class = .
+
+            // $(document).ready(function(){})
+            // $(window).load(function(){})
+            
+
+            // 1. 페이지를 열었다
+            // 2. 해당 페이지에 필요한 파일들 (html,js,css)을 불러온다
+            // 3. document
+            // 4. 불러온 파일들 (html,js,css)을 화면에 표시한다
+            // 5. window
+            
+            $(document).ready(function(){
+
+                $(".divs-1").on( 'click', function(){
+                    $(".divs-1").css('background-color','cornflowerblue')
+                })
+
+
+            })
+            
+            $(window).load(function(){
+            })
+
+            function clicked(){
+
+                // var = 값 변경 가능
+                // let = 값 변경 불가능 -> 고정값
+                
+                var contents = $("#div-1").html()
+
+                // input = value
+                // div = html
+
+                alert(contents);
+            }
+
+
+
+        </script>
+    </head>
+    
+    <style>
+      
+    </style>
+    <body>
+
+        <div id="div-1" class="divs-1" style="float: left; width: 100%; border: 2px solid red; height: 500px; background-color: red;">
+            <div style="border: 2px solid blue; width: 50px; height: 50px; font-size: 3.0em; padding-left: 15px; background-color: blue; color: white; float: right; cursor: pointer;" onclick="javscript:location.href='http://www.naver.com'">X</div>
+            <div style="background-color: green; width: 10px; height: 10px; position: fixed; right: 30px; top: 30px; cursor: pointer;"></div>
+            ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+        </div>
+      
+
+
+    </body>
+
+
+
+
+    172.30.43.171:5501/index%20copy.html
+    
+
+
+
+    <header></header>
+    <footer></footer>
+
+
+
+
+</html>
